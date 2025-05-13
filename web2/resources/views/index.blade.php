@@ -21,7 +21,6 @@
       flex-direction: column;
     }
 
-    /* Header */
     header {
       background-color: #1e1e1e;
       padding: 20px;
@@ -48,7 +47,6 @@
       background-color: #555;
     }
 
-    /* Main */
     main {
       flex: 1;
       display: flex;
@@ -104,7 +102,6 @@
       background-color: #0056b3;
     }
 
-    /* Logo */
     .logo-container {
       position: absolute;
       top: 20px;
@@ -115,7 +112,6 @@
       width: 100px;
     }
 
-    /* Footer */
     footer {
       background-color: #1e1e1e;
       padding: 30px 20px;
@@ -154,8 +150,10 @@
     <div class="nav3">
       <nav>
         <ul>
-          <li><a href="{{ route('signin') }}" class="nav-button"><strong>Sign Up</strong></a></li>
-          <li><a href="admin.html" class="nav-button"><strong>Admin</strong></a></li>
+          <!-- Correction : la route doit être 'signup' pour Sign Up -->
+          <li><a href="{{ route('signup') }}" class="nav-button"><strong>Sign Up</strong></a></li>
+          <!-- Correction : la route doit être 'admin' pour Admin -->
+          <li><a href="{{ route('admin') }}" class="nav-button"><strong>Admin</strong></a></li>
         </ul>
       </nav>
     </div>
@@ -169,7 +167,8 @@
       <div class="overlay-text">
         <h5>Discover perfection.</h5>
         <p>Click here to join us</p>
-        <a href="singup.html" class="join-button">Sign In</a>
+        <!-- Correction : la route doit être 'signup' pour Sign Up -->
+        <a href="{{ route('signup') }}" class="join-button">Sign Up</a>
       </div>
       <div class="logo-container">
         <img src="{{ asset('assets/loggo.jpg') }}" alt="Logo" />
