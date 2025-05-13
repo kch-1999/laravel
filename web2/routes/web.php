@@ -22,7 +22,7 @@ Route::get('/admin', function () {
     return view('admin');
 })->name('admin');
 
-// route mta3 formulaire 
+// route mta3 formulaire admin 
 Route::get('/admin/login', [AdminController::class, 'showLoginForm'])->name('admin.loginForm');
 Route::post('/admin/login', [AdminController::class, 'login'])->name('admin.login');
 Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
