@@ -33,3 +33,7 @@ Route::get('/suivi-nutritionnel', [SuiviController::class, 'index'])->name('suiv
 
 Route::get('/supprimer-compte', [UtilisateurController::class, 'supprimerCompteForm'])->name('utilisateur.supprimer.form');
 Route::post('/supprimer-compte', [UtilisateurController::class, 'supprimerCompte'])->name('utilisateur.supprimer');
+
+
+Route::get('/connexion', [AuthController::class, 'showLoginForm'])->name('connexion');
+Route::post('/connexion', [AuthController::class, 'login'])->name('admin.connexion');
