@@ -21,6 +21,9 @@ return new class extends Migration {
                 ->onDelete('cascade');
         });
     }
-
+    public function down(): void
+    {
+        Schema::dropIfExists('suivi_nutritionnel');
+    }
     
 };
