@@ -79,9 +79,9 @@
     <h2>Espace Utilisateur</h2>
 
     <div class="button-container">
-        <a href="suprimercompte.html">Supprimer le Compte</a>
-        <a href="choisir_recette.php">Choisir une Recette</a>
-        <a href="suivi-nutritionelle.php">Voir Suivi Nutritionnel</a>
+        <a href="{{route (suprimer-compte) }}">Supprimer le Compte</a>
+        <a href="{{route (choisir-recette) }}">Choisir une Recette</a>
+        <a href="{{route (suivi-nutritionelle) }}">Voir Suivi Nutritionnel</a>
     </div>
 
     <footer>

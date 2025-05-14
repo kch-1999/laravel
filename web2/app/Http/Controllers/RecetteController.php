@@ -10,7 +10,7 @@ class RecetteController extends Controller
     public function index()
     {
         $recettes = Recette::all();
-        return view('choisir_recette', compact('recettes'));
+        return view('choisir-recette', compact('recettes'));
     }
 
     public function choisir(Request $request)
@@ -18,6 +18,6 @@ class RecetteController extends Controller
         $id = $request->input('id_recette');
         $recette = Recette::find($id);
 
-        return view('recette_choisie', compact('recette'));
+        return view('recette-choisie', compact('recette'));
     }
 }

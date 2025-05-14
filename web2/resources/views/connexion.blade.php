@@ -7,7 +7,7 @@
 </head>
 <body>
     <h2>Connexion Admin</h2>
-    <form action="{{ route('admin.connexion') }}" method="POST">
+    <form action="{{ route('connexion') }}" method="POST">
         @csrf
         <label for="email">Email :</label>
         <input type="email" name="email" required>

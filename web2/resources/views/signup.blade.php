@@ -72,7 +72,7 @@
   </header>
 
   <main>
-    <form class="Formul_SignUp" action="{{ route('register') }}" method="POST">
+    <form class="Formul_SignUp" action="{{ route('utulisateur') }}" method="POST">
         @csrf
 
         <label for="pseudo"><strong>Pseudo</strong></label>
