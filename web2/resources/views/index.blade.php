@@ -150,9 +150,7 @@
     <div class="nav3">
       <nav>
         <ul>
-          <!-- Correction : la route doit être 'signup' pour Sign Up -->
           <li><a href="{{ route('signup') }}" class="nav-button"><strong>Sign Up</strong></a></li>
-          <!-- Correction : la route doit être 'admin' pour Admin -->
           <li><a href="{{ route('admin') }}" class="nav-button"><strong>Admin</strong></a></li>
         </ul>
       </nav>
@@ -167,7 +165,6 @@
       <div class="overlay-text">
         <h5>Discover perfection.</h5>
         <p>Click here to join us</p>
-        <!-- Correction : la route doit être 'signup' pour Sign Up -->
         <a href="{{ route('signup') }}" class="join-button">Sign Up</a>
       </div>
       <div class="logo-container">
